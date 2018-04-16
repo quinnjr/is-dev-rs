@@ -7,7 +7,7 @@ A simple macro to determine if an environment is
 a "development" environment.
 
 Built because some of us (me) are lazy and don't feel like
-copy-pasting the same check for developement environments over and over
+copy-pasting the same check for development environments over and over
 again.
 
 :heart:
