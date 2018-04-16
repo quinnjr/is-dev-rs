@@ -1,0 +1,32 @@
+[package]
+name = "is-dev"
+version = "0.1.0"
+authors = ["Joseph R. Quinn <quinn.josephr@protonmail.com>"]
+description = """
+A simple macro to determine if an environment is
+a "development" environment.
+
+Built because some of us (me) are lazy and don't feel like
+copy-pasting the same check for developement environments over and over
+again.
+
+:heart:
+
+Ex:
+```
+#[macro_use] extern crate is_dev;
+
+fn test_is_dev() {
+    let e: bool = is_dev!("ENV", "development");
+    assert!(e);
+}
+```
+"""
+homepage = "https://github.com/quinnjr/is-dev-rs"
+keywords = ["development", "environment", "helper"]
+license = "ISC"
+categories = ["development-tools"]
+
+[badges]
+travis-ci = { repository = "quinnjr/is-dev-rs", branch = "master" }
+maintenance = { status = "actively-developed" }
